@@ -79,6 +79,6 @@ def say_hello(data: io.BytesIO = None):
                 }
             span_context.update_binary_annotations(errors)
 
-        message = "Hello {0}".format(name)
+        message = "Hello from fn-with-customImage {0}".format(name)
         logging.getLogger().info("message: " + message)
         return message
