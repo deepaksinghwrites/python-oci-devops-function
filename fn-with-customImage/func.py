@@ -15,6 +15,6 @@ def handler(ctx, data: io.BytesIO=None):
     logging.getLogger().info("Invoked function with custom image") 
     return response.Response(
         ctx, 
-        response_data=json.dumps({"status": "Welcome to OCI demo using customImage "}),
+        response_data=json.dumps({"status": "Presenting during monday touchpoint for OCI demo inside customImage "}),
         headers={"Content-Type": "application/json"}
     )
